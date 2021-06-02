@@ -1,5 +1,7 @@
-export class Week{
+export class Report{
     id?: string;
+    technicianId?: string;
+    serviceId?: string;
     totalWeekHours?: number;
     totalWeekNormalHours?: number;
     weekNormalDaytimeHours?: number;

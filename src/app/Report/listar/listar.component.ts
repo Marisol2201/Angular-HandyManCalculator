@@ -1,4 +1,4 @@
-import { Week } from './../../Model/week';
+import { Report } from '../../Model/report';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { ServiceService } from '../../Service/service.service';
@@ -10,20 +10,20 @@ import { ServiceService } from '../../Service/service.service';
 })
 export class ListarComponent implements OnInit {
 
-  weeks?: Week[];
+  reports?: Report[];
   constructor(private service: ServiceService, private router: Router) { }
 
-  // tslint:disable-next-line: typedef
+  
   ngOnInit(){
-    this.service.getWeeks()
-    .subscribe(data => {
-      this.weeks = data;
+    this.service.getReports()
+    .subscribe((data) => {
+      this.reports = data;
     });
   }
 
   // tslint:disable-next-line: typedef
-  // Editar(week: Week): void {
-  //   localStorage.setItem('id', week.id.toString());
+  // Editar(report: Report): void {
+  //   localStorage.setItem('id', report.id.toString());
   //   this.router.navigate(['edit']);
   // }
 }

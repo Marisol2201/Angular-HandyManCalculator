@@ -1,6 +1,6 @@
 // import { Component, OnInit } from '@angular/core';
 // import { Router } from '@angular/router';
-// import { Week } from 'src/app/Model/week';
+// import { Report } from 'src/app/Model/report';
 // import { ServiceService } from 'src/app/Service/service.service';
 
 // @Component({
@@ -10,7 +10,7 @@
 // })
 // export class EditComponent implements OnInit {
 
-//   week: Week = new Week();
+//   report: Report = new Report();
 //   constructor(private router: Router, private service: ServiceService) { }
 
 //   // tslint:disable-next-line: typedef
@@ -22,17 +22,17 @@
 //   Editar() {
 //     // tslint:disable-next-line: prefer-const
 //     let id = localStorage.getItem('id');
-//     this.service.getWeekId(+id)
+//     this.service.getReportId(+id)
 //     .subscribe(data => {
-//       this.week = data;
+//       this.report = data;
 //     });
 //   }
 
 //   // tslint:disable-next-line: typedef
-//   Actualizar(week: Week) {
-//     this.service.updateWeek(week)
+//   Actualizar(report: Report) {
+//     this.service.updateReport(report)
 //     .subscribe(data => {
-//       this.week = data;
+//       this.report = data;
 //       alert('Se actualizó con éxito');
 //       this.router.navigate(['listar']);
 //     });

@@ -6,9 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListarComponent } from './Week/listar/listar.component';
-import { AddComponent } from './Week/add/add.component';
-// import { EditComponent } from './Week/edit/edit.component';
+import { ListarComponent } from './Report/listar/listar.component';
+import { AddComponent } from './Report/add/add.component';
+// import { EditComponent } from './Report/edit/edit.component';
 
 import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 
